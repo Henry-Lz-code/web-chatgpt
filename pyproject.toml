@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "chatgpt-web"
+version = "0.1.0"
+description = "chatgpt open api"
+authors = ["henry <3113898615@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+websockets = "^11.0.2"
+openai = "^0.27.6"
+dynaconf = "^3.1.12"
+
+
+[[tool.poetry.source]]
+name = "install_url"
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
